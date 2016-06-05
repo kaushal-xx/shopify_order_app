@@ -13,9 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20160605170914) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "shops", force: :cascade do |t|
-    t.string   "shopify_domain", limit: 255, null: false
-    t.string   "shopify_token",  limit: 255, null: false
+    t.string   "shopify_domain", null: false
+    t.string   "shopify_token",  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
