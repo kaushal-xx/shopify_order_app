@@ -23,7 +23,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.id %></td>
-        <td><%= image_tag product.image.url %></td>
+        <td><%= image_tag product.image.src %></td>
         <td><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></td>
         <td><%= product.created_at %></td>
       </tr>
