@@ -24,7 +24,7 @@
       <tr>
         <td><%= product.id %></td>
         <td><%= image_tag product.image.src %></td>
-        <td><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></td>
+        <td><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top", class: 'product-image' %></td>
         <td><%= product.created_at %></td>
       </tr>
     <% end %>
