@@ -36,6 +36,7 @@ gem 'bootstrap-sass', '~> 3.3.1'
 # gem 'capistrano-rails', group: :development
 
 gem 'shopify_app'
+gem "figaro"
 
 gem 'omniauth-oauth2', '~> 1.2.0'
 group :development, :test do
